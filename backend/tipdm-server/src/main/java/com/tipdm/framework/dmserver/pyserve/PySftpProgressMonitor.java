@@ -55,7 +55,7 @@ public class PySftpProgressMonitor implements SftpProgressMonitor {
         try {
             channelExec = (ChannelExec) session.openChannel("exec");
             //保持编码一致性
-            String command = "source ~/bin/activate;" +
+            String command = "source ~/tipdm/bin/activate;" +
                              "export LANG=zh_CN.UTF-8;" +
                              "export LC_CTYPE=zh_CN.UTF-8;" +
                              "export LC_ALL=zh_CN.UTF-8; " +
