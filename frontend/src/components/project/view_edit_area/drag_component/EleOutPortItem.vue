@@ -56,7 +56,8 @@
         var contentDomOffset = document.getElementById("dwaContent").getBoundingClientRect();
         var target = {x: d3.event.pageX - contentDomOffset.left, y: d3.event.pageY - contentDomOffset.top};
         var position = [{source: this.source, target: target}];
-        line.data(position).transition().duration(10).attr("d", this.elbow);
+        //line.data(position).transition().duration(10).attr("d", this.elbow);
+        line.data(position).attr("d", this.elbow);
       },
       mouseUp: function () {//鼠标划线结束后放开事件
         this.flowData.source = {
@@ -73,7 +74,8 @@
           var contentDomOffset = document.getElementById("dwaContent").getBoundingClientRect();
           var target = {x: offset.left - contentDomOffset.left + 20, y: offset.top - contentDomOffset.top + 20};
           var position = [{source: this.source, target: target}];
-          line.data(position).transition().duration(10).attr("d", this.elbow);
+          //line.data(position).transition().duration(10).attr("d", this.elbow);
+          line.data(position).attr("d", this.elbow);
           line.remove();
           if (this.nodeId == this.$store.state.project.flowData.target.targetNodeId) {//连线时输入与输出是同一节点时不能生成连线
           } else {

@@ -2,7 +2,7 @@
     "httpServer": "https://tipdm.suomitek.com:401/tipdm-dmserver",
     "httpOauth": "https://tipdm-auth.suomitek.com:401/oauth",
     "httpClient": "http://localhost:8089",
-    "socketServer": "localhost",
+    "socketServer": "39.105.94.177",
     "socketPort": 9020,
     "title": "数据挖掘建模平台",
     "databaseUploadFileSize": 10,
