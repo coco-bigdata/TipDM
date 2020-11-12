@@ -71,9 +71,9 @@ public class PySftpProgressMonitor implements SftpProgressMonitor {
                 msgQueue.add(msg);
             }
             //删除
-            //channelRm = (ChannelExec) session.openChannel("exec");
-            //channelRm.setCommand("rm -fr " + dest);
-            //channelRm.connect();
+            channelRm = (ChannelExec) session.openChannel("exec");
+            channelRm.setCommand("rm -fr " + dest);
+            channelRm.connect();
         } catch (JSchException e) {
             msgQueue.add(e.getMessage());
         } catch (IOException e) {
