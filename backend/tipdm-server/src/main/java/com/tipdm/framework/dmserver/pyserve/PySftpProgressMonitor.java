@@ -55,11 +55,11 @@ public class PySftpProgressMonitor implements SftpProgressMonitor {
         try {
             channelExec = (ChannelExec) session.openChannel("exec");
             //保持编码一致性
-            String command = "source /root/tipdm/bin/activate;" +
+            String command = "source ~/bin/activate;" +
                              "export LANG=zh_CN.UTF-8;" +
                              "export LC_CTYPE=zh_CN.UTF-8;" +
                              "export LC_ALL=zh_CN.UTF-8; " +
-                             "/root/tipdm/bin/python {}";
+                             "python {}";
             command = MessageFormatter.format(command, dest).getMessage();
             logger.info("exec command: {}", command);
             channelExec.setCommand(command);
@@ -71,9 +71,9 @@ public class PySftpProgressMonitor implements SftpProgressMonitor {
                 msgQueue.add(msg);
             }
             //删除
-            channelRm = (ChannelExec) session.openChannel("exec");
-            channelRm.setCommand("rm -fr " + dest);
-            channelRm.connect();
+            //channelRm = (ChannelExec) session.openChannel("exec");
+            //channelRm.setCommand("rm -fr " + dest);
+            //channelRm.connect();
         } catch (JSchException e) {
             msgQueue.add(e.getMessage());
         } catch (IOException e) {
