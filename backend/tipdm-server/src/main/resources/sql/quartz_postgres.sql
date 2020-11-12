@@ -190,4 +190,3 @@ create index idx_qrtz_ft_tg on qrtz_fired_triggers(SCHED_NAME,TRIGGER_GROUP);
 
 
 commit;
->>>>>>> eed45922302a4e0a10282e901a143e073603576e
