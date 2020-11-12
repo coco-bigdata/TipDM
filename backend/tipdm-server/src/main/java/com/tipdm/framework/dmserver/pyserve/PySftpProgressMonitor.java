@@ -59,7 +59,7 @@ public class PySftpProgressMonitor implements SftpProgressMonitor {
                              "export LANG=zh_CN.UTF-8;" +
                              "export LC_CTYPE=zh_CN.UTF-8;" +
                              "export LC_ALL=zh_CN.UTF-8; " +
-                             "python {}";
+                             "python {} >> /var/log/tipdm/tipdm.log";
             command = MessageFormatter.format(command, dest).getMessage();
             logger.info("exec command: {}", command);
             channelExec.setCommand(command);
