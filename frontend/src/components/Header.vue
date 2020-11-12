@@ -2,7 +2,7 @@
 <template xmlns:v-popover="http://www.w3.org/1999/xhtml">
   <div id="header" class="header">
     <div class="logo">
-      <img src="./../assets/img/logo_mob.svg">
+      <img width="60px" src="./../assets/img/logo_mob.svg">
     </div>
     <div class="ver">
       <h4>{{title}}</h4>
