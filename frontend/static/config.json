@@ -1,9 +1,9 @@
 {
-    "httpServer": "https://tipdm.suomitek.com:401/tipdm-dmserver",
-    "httpOauth": "https://tipdm-auth.suomitek.com:401/oauth",
+    "httpServer": "https://tipdm2.suomitek.com:401/tipdm-dmserver",
+    "httpOauth": "https://tipdm-auth2.suomitek.com:401/oauth",
     "httpClient": "http://localhost:8089",
     "socketServer": "39.105.94.177",
-    "socketPort": 9020,
+    "socketPort": 9021,
     "title": "数据挖掘建模平台",
     "databaseUploadFileSize": 10,
     "mode": "online"
