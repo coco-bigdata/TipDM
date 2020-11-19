@@ -125,3 +125,7 @@ TipDM建模平台，是由广东泰迪智能科技股份有限公司研发并开
 
 # FAQ #
 [http://python.tipdm.org/bzzx/index.jhtml?n=%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98](http://python.tipdm.org/bzzx/index.jhtml?n=%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
+
+```
+https://github.com/By-two/Media_bigdata
+```
