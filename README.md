@@ -129,4 +129,9 @@ TipDM建模平台，是由广东泰迪智能科技股份有限公司研发并开
 ```
 https://github.com/By-two/Media_bigdata
 cp -r /root/git/TipDM2/templates/doc/admin/* /home/tipdm/doc/admin/
+
+ping tipdb
+PING tipdb (172.22.0.2) 56(84) bytes of data.
+64 bytes from docker_tipdb_1.docker_default (172.22.0.2): icmp_seq=1 ttl=64 time=0.116 ms
+64 bytes from docker_tipdb_1.docker_default (172.22.0.2): icmp_seq=2 ttl=64 time=0.079 ms
 ```
